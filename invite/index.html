@@ -594,11 +594,8 @@ section > .petals{z-index:0}
           <h3>P G R Gardens</h3>
           <div class="v-date">Friday, December 4, 2026 — The Wedding</div>
           <address>
-            100 ft Road, Fathima Nagar,<br/>
-            Kakatiya University Bypass Road,<br/>
-            Hanamkonda, Telangana 506004, India
+            100 feet road, Waddepally, Hanamkonda
           </address>
-          <a class="v-phone" href="tel:+919666604343">☎ &nbsp;+91 96666 04343</a>
           <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=P+G+R+Gardens%2C+100+ft+Road%2C+Fathima+Nagar%2C+Kakatiya+University+Bypass+Rd%2C+Hanamkonda%2C+Telangana+506004" target="_blank" rel="noopener">Get Directions</a>
         </div>
         <div class="venue-info reveal">
@@ -606,10 +603,8 @@ section > .petals{z-index:0}
           <h3>Lakshmi Narasimha Gardens</h3>
           <div class="v-date">Sunday, December 6, 2026 — The Reception</div>
           <address>
-            Q8MH+QGP, SH 21, beside Bajaj Showroom,<br/>
-            Haliya, Telangana 508377, India
+            Haliya, Nalgonda, Telangana
           </address>
-          <a class="v-phone" href="tel:+919440327585">☎ &nbsp;+91 94403 27585</a>
           <a class="btn" href="https://maps.app.goo.gl/jmcQPvgoagBtxGNc9?g_st=ic" target="_blank" rel="noopener">Get Directions</a>
         </div>
       </div>
@@ -628,7 +623,7 @@ section > .petals{z-index:0}
       <div class="fams">
         <div class="fam reveal">
           <div class="fam-role">Family of the Bride</div>
-          <div class="fam-names">Sree Ram Reddy Dondapati<br/>&amp; Soma Lakahmi</div>
+          <div class="fam-names">Sreeram Reddy Dondapati<br/>&amp; Soma Lakshmi</div>
         </div>
         <div class="fam reveal">
           <div class="fam-role">Family of the Groom</div>
@@ -661,12 +656,12 @@ var $ = function(id){ return document.getElementById(id); };
 var EVENTS = [
   { name:"The Wedding", dow:"Friday", dateLabel:"December 4, 2026 · 9:15 AM", iso:"20261204T034500Z", endIso:"20261204T071500Z", timed:true, wedding:true,
     note:"The muhurtham — Chakritha weds Shiva",
+    loc:"P G R Gardens, Hanamkonda",
     desc:"Beneath a marigold-draped mandap at P G R Gardens, Chakritha and Shiva exchange garlands and sacred vows at the auspicious hour of 9:15 AM, as the mangalsutra is tied and two families become one." },
   { name:"Reception", dow:"Sunday", dateLabel:"December 6, 2026", iso:"20261206", endIso:"20261207",
     note:"An evening of blessings and feast",
     loc:"Lakshmi Narasimha Gardens, Haliya",
-    venue:"Lakshmi Narasimha Gardens, Q8MH+QGP, SH 21, beside Bajaj Showroom, Haliya, Telangana 508377, India",
-    venuePhone:"+91 94403 27585",
+    venue:"Lakshmi Narasimha Gardens, Haliya, Nalgonda, Telangana",
     desc:"The newlyweds welcome you once more — this time as husband and wife. Join us at Lakshmi Narasimha Gardens, Haliya, for an evening of blessings, photographs, a grand feast and the first celebration of Chakritha and Shiva's married life." }
 ];
 
@@ -682,8 +677,8 @@ function downloadICS(ev){
     "UID:" + ev.iso + "-chakritha-shiva@wedding",
     dt,
     "SUMMARY:" + esc(ev.name + " — Chakritha & Shiva's Wedding"),
-    "LOCATION:" + esc(ev.venue || "P G R Gardens, 100 ft Road, Fathima Nagar, Kakatiya University Bypass Rd, Hanamkonda, Telangana 506004, India"),
-    "DESCRIPTION:" + esc(ev.note + ". Chakritha & Shiva wedding celebrations. Mandapam phone: " + (ev.venuePhone || "+91 96666 04343")),
+    "LOCATION:" + esc(ev.venue || "P G R Gardens, 100 feet road, Waddepally, Hanamkonda"),
+    "DESCRIPTION:" + esc(ev.note + ". Chakritha & Shiva wedding celebrations."),
     "END:VEVENT","END:VCALENDAR"
   ].join("\r\n");
   var blob = new Blob([ics], { type:"text/calendar" });
