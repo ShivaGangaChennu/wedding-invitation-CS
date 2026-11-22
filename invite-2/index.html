@@ -699,7 +699,7 @@ EVENTS.forEach(function(ev){
     '<div class="tl-when">' + ev.dow + " · " + ev.dateLabel + '</div>' +
     '<h3>' + ev.name + '</h3>' +
     '<div class="tl-note">' + ev.note + '</div>' +
-    (ev.loc ? '<div class="tl-loc">Mandapam: ' + ev.loc + '</div>' : '') + '</div>' +
+    (ev.loc ? '<div class="tl-loc">' + ev.loc + '</div>' : '') + '</div>' +
     '<button class="btn ghost small" type="button">Add to Calendar</button></div>';
   item.querySelector("button").addEventListener("click", function(){ downloadICS(ev); });
   timeline.appendChild(item);
