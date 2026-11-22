@@ -586,7 +586,7 @@ section > .petals{z-index:0}
       <div class="sec-head reveal">
         <div class="orn" aria-hidden="true">❧</div>
         <h2>The Mandapams</h2>
-        <p>The wedding gathers in Hanamkonda; the reception celebrates in Haliya.</p>
+        <p>The celebrations begin in Madikonda; the wedding gathers in Hanamkonda; the reception celebrates in Haliya.</p>
         <div class="gold-rule"></div>
       </div>
       <div class="venue-grid">
@@ -607,6 +607,15 @@ section > .petals{z-index:0}
             Haliya, Nalgonda, Telangana
           </address>
           <a class="btn" href="https://maps.app.goo.gl/jmcQPvgoagBtxGNc9?g_st=ic" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+        <div class="venue-info reveal">
+          <div class="v-label">Haldi &amp; Mehndi</div>
+          <h3>TR Farm Resort &amp; Convention</h3>
+          <div class="v-date">Monday, November 30, 2026 \u2014 Haldi &amp; Mehndi</div>
+          <address>
+            Near Yellamma Temple, Madikonda, Dharmasagar, Telangana 506142
+          </address>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=TR+Farm+Resort+%26+Convention%2C+near+Yellamma+Temple%2C+Madikonda%2C+Dharmasagar%2C+Telangana+506142%2C+India" target="_blank" rel="noopener">Get Directions</a>
         </div>
       </div>
     </div>
@@ -712,7 +721,7 @@ EVENTS.forEach(function(ev){
     '<div class="tl-when">' + ev.dow + " · " + ev.dateLabel + '</div>' +
     '<h3>' + ev.name + '</h3>' +
     '<div class="tl-note">' + ev.note + '</div>' +
-    (ev.loc ? '<div class="tl-loc">Mandapam: ' + ev.loc + '</div>' : '') + (ev.dir ? '<a class="tl-dir" href="' + ev.dir + '" target="_blank" rel="noopener">Get Directions \u2192</a>' : '') + '</div>' +
+    (ev.loc ? '<div class="tl-loc">' + ev.loc + '</div>' : '') + (ev.dir ? '<a class="tl-dir" href="' + ev.dir + '" target="_blank" rel="noopener">Get Directions \u2192</a>' : '') + '</div>' +
     '<button class="btn ghost small" type="button">Add to Calendar</button></div>';
   item.querySelector("button").addEventListener("click", function(){ downloadICS(ev); });
   timeline.appendChild(item);
